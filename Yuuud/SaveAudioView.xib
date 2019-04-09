@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NOTOSANS-REGULAR_0.TTF">
+            <string>NotoSans</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="eXr-dN-cdS" customClass="SaveAudioView">
+            <rect key="frame" x="0.0" y="0.0" width="306" height="189"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name your yuuud" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PW3-IK-Z2p">
+                    <rect key="frame" x="0.0" y="0.0" width="306" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="qLp-VN-su0"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="NotoSans" family="Noto Sans" pointSize="18"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6KL-jR-fnB">
+                    <rect key="frame" x="0.0" y="44" width="306" height="1"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="Lbi-yR-IaP"/>
+                    </constraints>
+                </view>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter audio name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bKT-4q-Jeg">
+                    <rect key="frame" x="28" y="63" width="250" height="42"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" name="NotoSans" family="Noto Sans" pointSize="18"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QNu-X3-yXm">
+                    <rect key="frame" x="123" y="117" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="dFZ-m9-i3X"/>
+                        <constraint firstAttribute="height" constant="60" id="dKE-5V-4Zg"/>
+                    </constraints>
+                    <state key="normal" image="ic_BtnSave"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="0.34509803921568627" blue="0.23921568627450979" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="bKT-4q-Jeg" secondAttribute="trailing" constant="28" id="4zk-4h-rUJ"/>
+                <constraint firstItem="6KL-jR-fnB" firstAttribute="leading" secondItem="eXr-dN-cdS" secondAttribute="leading" id="I4H-23-Ssx"/>
+                <constraint firstItem="PW3-IK-Z2p" firstAttribute="leading" secondItem="eXr-dN-cdS" secondAttribute="leading" id="K2K-QS-cOU"/>
+                <constraint firstItem="QNu-X3-yXm" firstAttribute="top" secondItem="bKT-4q-Jeg" secondAttribute="bottom" constant="12" id="Lje-XD-dCw"/>
+                <constraint firstAttribute="trailing" secondItem="6KL-jR-fnB" secondAttribute="trailing" id="MBk-36-qgE"/>
+                <constraint firstItem="bKT-4q-Jeg" firstAttribute="leading" secondItem="eXr-dN-cdS" secondAttribute="leading" constant="28" id="b1I-FJ-cTW"/>
+                <constraint firstItem="QNu-X3-yXm" firstAttribute="centerX" secondItem="eXr-dN-cdS" secondAttribute="centerX" id="dip-N2-KU3"/>
+                <constraint firstAttribute="trailing" secondItem="PW3-IK-Z2p" secondAttribute="trailing" id="heX-fa-4da"/>
+                <constraint firstItem="6KL-jR-fnB" firstAttribute="top" secondItem="PW3-IK-Z2p" secondAttribute="bottom" id="jBf-mE-Ubv"/>
+                <constraint firstItem="bKT-4q-Jeg" firstAttribute="top" secondItem="6KL-jR-fnB" secondAttribute="bottom" constant="18" id="ns4-vh-ZE4"/>
+                <constraint firstItem="PW3-IK-Z2p" firstAttribute="top" secondItem="eXr-dN-cdS" secondAttribute="top" id="p5a-YR-3p0"/>
+                <constraint firstAttribute="bottom" secondItem="QNu-X3-yXm" secondAttribute="bottom" constant="12" id="xVG-YW-MMc"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btnSave" destination="QNu-X3-yXm" id="5yj-EG-GHf"/>
+                <outlet property="txtName" destination="bKT-4q-Jeg" id="UH3-eF-IqA"/>
+            </connections>
+            <point key="canvasLocation" x="142" y="157"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_BtnSave" width="16" height="16"/>
+    </resources>
+</document>

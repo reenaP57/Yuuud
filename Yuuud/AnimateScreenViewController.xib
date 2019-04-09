@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AnimateScreenViewController">
+            <connections>
+                <outlet property="btnRecord" destination="nvM-AM-CwZ" id="Rjx-Y6-TYb"/>
+                <outlet property="cnBtnRecordBottomSpace" destination="6fX-9B-JG7" id="KNO-Fk-t8e"/>
+                <outlet property="lbNoYuuud" destination="kEf-TX-aQz" id="3pR-1P-VeC"/>
+                <outlet property="shimmeringView" destination="CdE-Jr-TJr" id="fHc-gD-qjZ"/>
+                <outlet property="tblRecordings" destination="Md9-wP-LfB" id="SKj-jV-aiC"/>
+                <outlet property="tblShimmer" destination="XKm-rL-wgM" id="sao-Hq-SU4"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="vwAdBanner" destination="pUE-Ru-rmk" id="QNu-R2-EE4"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No yuuud found." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kEf-TX-aQz">
+                    <rect key="frame" x="124" y="323" width="127.5" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CdE-Jr-TJr" customClass="FBShimmeringView">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="XKm-rL-wgM">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="h1b-5F-c2f"/>
+                        <outlet property="delegate" destination="-1" id="HWg-qx-cf4"/>
+                    </connections>
+                </tableView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Md9-wP-LfB">
+                    <rect key="frame" x="0.0" y="-44" width="375" height="661"/>
+                    <color key="backgroundColor" red="0.92156862745098034" green="0.92156862745098034" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="1vx-j0-jpX"/>
+                        <outlet property="delegate" destination="-1" id="OKE-Co-7X1"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nvM-AM-CwZ">
+                    <rect key="frame" x="148" y="501" width="80" height="80"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="TBz-WA-35r"/>
+                        <constraint firstAttribute="width" constant="80" id="mBO-ZH-xXf"/>
+                    </constraints>
+                    <state key="normal" image="v_BtnRecord_Red">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="btnRecordClick:" destination="-1" eventType="touchUpInside" id="Vb9-WC-g4c"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pUE-Ru-rmk" customClass="GADBannerView">
+                    <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="YvB-ec-4ZA"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="autoloadEnabled" value="YES"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="adUnitID" value="ca-app-pub-2625246565814096/5162693367"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="pUE-Ru-rmk" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="3hk-90-UrH"/>
+                <constraint firstItem="kEf-TX-aQz" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="5dJ-wf-cke"/>
+                <constraint firstItem="pUE-Ru-rmk" firstAttribute="top" secondItem="Md9-wP-LfB" secondAttribute="bottom" id="5eI-NE-ffP"/>
+                <constraint firstAttribute="bottom" secondItem="nvM-AM-CwZ" secondAttribute="bottom" constant="86" id="6fX-9B-JG7"/>
+                <constraint firstItem="CdE-Jr-TJr" firstAttribute="width" secondItem="Md9-wP-LfB" secondAttribute="width" id="70K-Ab-odB"/>
+                <constraint firstItem="CdE-Jr-TJr" firstAttribute="centerX" secondItem="Md9-wP-LfB" secondAttribute="centerX" id="8ZH-0j-FSq"/>
+                <constraint firstItem="nvM-AM-CwZ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="9Ws-JZ-eNK"/>
+                <constraint firstItem="Md9-wP-LfB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Ab3-Tg-0e4"/>
+                <constraint firstItem="XKm-rL-wgM" firstAttribute="centerY" secondItem="Md9-wP-LfB" secondAttribute="centerY" constant="25" id="CaU-qT-xtC"/>
+                <constraint firstAttribute="trailing" secondItem="Md9-wP-LfB" secondAttribute="trailing" id="Fpf-D5-Uja"/>
+                <constraint firstItem="CdE-Jr-TJr" firstAttribute="height" secondItem="Md9-wP-LfB" secondAttribute="height" constant="-38" id="Q6X-sn-t12"/>
+                <constraint firstItem="kEf-TX-aQz" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="SHy-b2-rSX"/>
+                <constraint firstItem="XKm-rL-wgM" firstAttribute="centerX" secondItem="Md9-wP-LfB" secondAttribute="centerX" id="ZUd-eK-KJe"/>
+                <constraint firstItem="CdE-Jr-TJr" firstAttribute="centerY" secondItem="Md9-wP-LfB" secondAttribute="centerY" constant="25" id="crU-Yb-6KP"/>
+                <constraint firstItem="XKm-rL-wgM" firstAttribute="height" secondItem="Md9-wP-LfB" secondAttribute="height" constant="-38" id="cx0-ga-Wed"/>
+                <constraint firstItem="Md9-wP-LfB" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="-44" id="mcz-wx-29o"/>
+                <constraint firstAttribute="bottom" secondItem="pUE-Ru-rmk" secondAttribute="bottom" id="nva-qT-AE9"/>
+                <constraint firstItem="XKm-rL-wgM" firstAttribute="width" secondItem="Md9-wP-LfB" secondAttribute="width" id="tBf-7Q-se1"/>
+                <constraint firstAttribute="trailing" secondItem="pUE-Ru-rmk" secondAttribute="trailing" id="zv0-gQ-ZHV"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="24.5" y="52.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="v_BtnRecord_Red" width="167" height="167"/>
+    </resources>
+</document>

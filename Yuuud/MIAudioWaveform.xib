@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MIAudioWaveform">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T2j-C8-JBF">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5fg-PK-WID">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="5fg-PK-WID" secondAttribute="trailing" id="5Gc-TE-MqU"/>
+                        <constraint firstItem="5fg-PK-WID" firstAttribute="top" secondItem="T2j-C8-JBF" secondAttribute="top" id="6sh-7g-DNb"/>
+                        <constraint firstAttribute="bottom" secondItem="5fg-PK-WID" secondAttribute="bottom" id="OBG-zw-kmf"/>
+                    </constraints>
+                </view>
+                <view clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hXY-61-7Y2">
+                    <rect key="frame" x="0.0" y="0.0" width="0.0" height="50"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kOU-bV-Zb0">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                        </imageView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="kOU-bV-Zb0" secondAttribute="bottom" id="MCC-jD-gsU"/>
+                        <constraint firstAttribute="width" id="gjj-9h-WcR"/>
+                        <constraint firstItem="kOU-bV-Zb0" firstAttribute="top" secondItem="hXY-61-7Y2" secondAttribute="top" id="kte-PC-vIe"/>
+                        <constraint firstItem="kOU-bV-Zb0" firstAttribute="leading" secondItem="hXY-61-7Y2" secondAttribute="leading" id="x0N-Bn-cEc"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="5fg-PK-WID" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="5TB-UX-MH8"/>
+                <constraint firstItem="hXY-61-7Y2" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Cp8-8b-Euf"/>
+                <constraint firstAttribute="bottom" secondItem="T2j-C8-JBF" secondAttribute="bottom" id="XGu-ku-rtJ"/>
+                <constraint firstItem="T2j-C8-JBF" firstAttribute="leading" secondItem="hXY-61-7Y2" secondAttribute="trailing" id="bOG-oi-ffk"/>
+                <constraint firstItem="kOU-bV-Zb0" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="cyQ-RI-S7S"/>
+                <constraint firstAttribute="trailing" secondItem="T2j-C8-JBF" secondAttribute="trailing" id="fUS-Bu-aIs"/>
+                <constraint firstAttribute="bottom" secondItem="hXY-61-7Y2" secondAttribute="bottom" id="gys-cz-g3q"/>
+                <constraint firstItem="hXY-61-7Y2" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ikp-DE-aTb"/>
+                <constraint firstItem="T2j-C8-JBF" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="jce-WU-qEA"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="cnProgressWidth" destination="gjj-9h-WcR" id="Qfq-ev-po2"/>
+                <outlet property="normalImageView" destination="5fg-PK-WID" id="zEh-A3-Idd"/>
+                <outlet property="normalView" destination="T2j-C8-JBF" id="OfW-Or-GAn"/>
+                <outlet property="progressImageView" destination="kOU-bV-Zb0" id="3aU-NO-bXd"/>
+                <outlet property="progressView" destination="hXY-61-7Y2" id="0Bj-if-VgV"/>
+            </connections>
+        </view>
+    </objects>
+</document>

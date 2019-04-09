@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NOTOSANS-REGULAR_0.TTF">
+            <string>NotoSans</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="CommentCell" id="KGk-i7-Jjw" customClass="CommentCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="95"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="94.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="751" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gKz-AF-EdB">
+                        <rect key="frame" x="8" y="8" width="359" height="37"/>
+                        <constraints>
+                            <constraint firstAttribute="height" priority="250" constant="37" id="Jme-qd-zmN"/>
+                        </constraints>
+                        <attributedString key="attributedText">
+                            <fragment content="strength!">
+                                <attributes>
+                                    <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <font key="NSFont" size="13" name="NotoSans"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.2" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Verdan Araquelyn" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ab8-OJ-3Va">
+                        <rect key="frame" x="8" y="60" width="92.5" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" priority="250" constant="15" id="Zim-lf-vZ6"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="NotoSans" family="Noto Sans" pointSize="11"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="v_clock" translatesAutoresizingMaskIntoConstraints="NO" id="OtU-aD-qOd">
+                        <rect key="frame" x="113.5" y="60" width="15" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="15" id="D8T-Dp-IZ9"/>
+                            <constraint firstAttribute="height" constant="15" id="SWJ-cd-SZ3"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="751" text="1 min" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zb9-Pb-GTI">
+                        <rect key="frame" x="133.5" y="60" width="29.5" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" priority="250" constant="15" id="DAb-LB-miJ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="NotoSans" family="Noto Sans" pointSize="11"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_Heart_Red_Broken_Round" translatesAutoresizingMaskIntoConstraints="NO" id="Y8a-58-n1B">
+                        <rect key="frame" x="335" y="60" width="15" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="15" id="1Yz-bW-HnC"/>
+                            <constraint firstAttribute="width" constant="15" id="S7f-dg-zHW"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="15" id="mnz-gY-nnZ"/>
+                            <constraint firstAttribute="height" constant="15" id="u4D-9k-2UE"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NaG-CN-yHk" customClass="TTFaveButton">
+                        <rect key="frame" x="325" y="55" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="25" id="Yep-iS-dG3"/>
+                            <constraint firstAttribute="height" constant="25" id="puf-9S-i7v"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="normalColor">
+                                <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="selectedColor">
+                                <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="dotFirstColor">
+                                <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="dotSecondColor">
+                                <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="circleFromColor">
+                                <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="circleToColor">
+                                <color key="value" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="751" text="20" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cY1-l1-pzh">
+                        <rect key="frame" x="354" y="60" width="13" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" priority="250" constant="15" id="tHX-PI-bDk"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="NotoSans" family="Noto Sans" pointSize="11"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hdt-O1-lWk">
+                        <rect key="frame" x="325" y="52.5" width="42" height="30"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="LIE-L7-tZD"/>
+                        </constraints>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="cY1-l1-pzh" firstAttribute="centerY" secondItem="zb9-Pb-GTI" secondAttribute="centerY" id="00z-GI-JU7"/>
+                    <constraint firstItem="ab8-OJ-3Va" firstAttribute="top" secondItem="gKz-AF-EdB" secondAttribute="bottom" constant="15" id="2dw-Hs-TUs"/>
+                    <constraint firstItem="gKz-AF-EdB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="6ef-bt-iWG"/>
+                    <constraint firstItem="cY1-l1-pzh" firstAttribute="leading" secondItem="Y8a-58-n1B" secondAttribute="trailing" constant="4" id="6ob-8d-RI5"/>
+                    <constraint firstItem="NaG-CN-yHk" firstAttribute="centerY" secondItem="cY1-l1-pzh" secondAttribute="centerY" id="7hE-uO-esC"/>
+                    <constraint firstItem="OtU-aD-qOd" firstAttribute="leading" secondItem="ab8-OJ-3Va" secondAttribute="trailing" constant="13" id="8ny-db-1Pc"/>
+                    <constraint firstItem="zb9-Pb-GTI" firstAttribute="centerY" secondItem="OtU-aD-qOd" secondAttribute="centerY" id="CcF-8Y-lM6"/>
+                    <constraint firstItem="OtU-aD-qOd" firstAttribute="centerY" secondItem="ab8-OJ-3Va" secondAttribute="centerY" id="Jea-Lt-RlL"/>
+                    <constraint firstAttribute="bottom" secondItem="ab8-OJ-3Va" secondAttribute="bottom" constant="20" id="RFl-Pi-9ZD"/>
+                    <constraint firstItem="cY1-l1-pzh" firstAttribute="leading" secondItem="NaG-CN-yHk" secondAttribute="trailing" constant="4" id="d46-Vv-iUE"/>
+                    <constraint firstAttribute="trailing" secondItem="gKz-AF-EdB" secondAttribute="trailing" constant="8" id="diA-fO-RdR"/>
+                    <constraint firstAttribute="trailing" secondItem="cY1-l1-pzh" secondAttribute="trailing" constant="8" id="gGy-Sq-5Cv"/>
+                    <constraint firstItem="Hdt-O1-lWk" firstAttribute="trailing" secondItem="cY1-l1-pzh" secondAttribute="trailing" id="i5Q-av-FQJ"/>
+                    <constraint firstItem="gKz-AF-EdB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="iah-b2-TC3"/>
+                    <constraint firstItem="zb9-Pb-GTI" firstAttribute="leading" secondItem="OtU-aD-qOd" secondAttribute="trailing" constant="4.5" id="n3l-i2-zSa"/>
+                    <constraint firstItem="Hdt-O1-lWk" firstAttribute="centerY" secondItem="NaG-CN-yHk" secondAttribute="centerY" id="wOw-qS-fSb"/>
+                    <constraint firstItem="Y8a-58-n1B" firstAttribute="centerY" secondItem="cY1-l1-pzh" secondAttribute="centerY" id="x1D-tb-dvx"/>
+                    <constraint firstItem="Hdt-O1-lWk" firstAttribute="leading" secondItem="NaG-CN-yHk" secondAttribute="leading" id="x7H-4O-VWz"/>
+                    <constraint firstItem="ab8-OJ-3Va" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="xi3-O9-u3R"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="btnLike" destination="NaG-CN-yHk" id="6Og-Cs-qwf"/>
+                <outlet property="btnLikeAction" destination="Hdt-O1-lWk" id="Is9-J0-s2k"/>
+                <outlet property="lbLikeCount" destination="cY1-l1-pzh" id="4wB-d8-dXl"/>
+                <outlet property="lbMainTitle" destination="gKz-AF-EdB" id="ZUV-3v-iQQ"/>
+                <outlet property="lbMainUsername" destination="ab8-OJ-3Va" id="15W-Gb-TYb"/>
+                <outlet property="lbTime" destination="zb9-Pb-GTI" id="zcX-Cj-Qpi"/>
+            </connections>
+            <point key="canvasLocation" x="-50.5" y="-37.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_Heart_Red_Broken_Round" width="17" height="17"/>
+        <image name="v_clock" width="100" height="100"/>
+    </resources>
+</document>

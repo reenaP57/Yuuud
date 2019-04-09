@@ -1,0 +1,46 @@
+//
+// Prefix header
+//
+// The contents of this file are implicitly
+// included at the beginning of every source file
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <Accelerate/Accelerate.h>
+#import <GoogleMobileAds/GoogleMobileAds.h>
+#import "AFNetworking.h"
+
+#import "SuperNavigationController.h"
+#import "SuperViewController.h"
+
+#import "Constants.h"
+#import "ApplicationConstants.h"
+#import "DisplayMessages.h"
+#import "Config.h"
+#import "Master.h"
+#import "Extensions.h"
+
+#import "APIRequest.h"
+
+#import "TTFaveIcon.h"
+#import "TTFaveButton.h"
+
+#import "UIViewController+Extension.h"
+#import "UIViewController+LocationManager.h"
+#import "UIColor+HexToRGB.h"
+
+#import "AudioStreamer.h"
+#import "IQKeyboardManager.h"
+
+#import "UIViewController+MessageMailComposerViewControllers.h"
+
+#endif
+
